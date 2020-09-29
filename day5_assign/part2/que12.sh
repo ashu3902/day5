@@ -12,13 +12,13 @@ case $n in
 	2)
 	echo "Enter value in feet: "
 	read v
-	r=$(( $v / 3 ))
+	r=$( awk 'BEGIN{print '$v' / 3}')
 	echo "$v feet is $r meters"
 	;;
 	3)
 	echo "Enter value in inches: "
 	read v
-	r=$(( $v / 12 ))
+	r=$( awk 'BEGIN{print '$v' / 12}')
 	echo "$v inches is $r feet"
 	;;
 	4)

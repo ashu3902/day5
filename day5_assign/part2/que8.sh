@@ -34,3 +34,4 @@ elif [ $g -lt $d ] && [ $g -lt $e ] && [ $g -lt $f ] ;
 then
 	echo "$g is min"
 fi
+
